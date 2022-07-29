@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--  -->
+    <v-button 
+    title="ButtonTitle" 
+    type='warning'
+    round
+    disabled
+    size='large'
+    @click='clickFn'>
+      <!-- <template #title>插槽传title</template> -->
+    </v-button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import vButton from './components/Button.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    vButton
+  },
+  methods: {
+    clickFn() {
+      console.log('click')
+    }
   }
 }
 </script>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="less"></style>
