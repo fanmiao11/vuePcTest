@@ -1,25 +1,27 @@
 <template>
   <div id="app">
     <!--  -->
-    <v-button 
+    <!-- <v-button 
     title="ButtonTitle" 
     type='warning'
     round
     disabled
     size='large'
-    @click='clickFn'>
+    @click='clickFn'> -->
       <!-- <template #title>插槽传title</template> -->
-    </v-button>
+    <!-- </v-button> -->
+
+    <f-button></f-button>
   </div>
 </template>
 
 <script>
-import vButton from './components/Button.vue'
+// import vButton from './components/Button.vue'
 
 export default {
   name: 'App',
   components: {
-    vButton
+    // vButton,
   },
   methods: {
     clickFn() {
