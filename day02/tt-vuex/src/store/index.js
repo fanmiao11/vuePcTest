@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import category from './modules/category'
+import newlist from './modules/newlist'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -13,5 +14,7 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
+    category,
+    newlist,
   }
 })

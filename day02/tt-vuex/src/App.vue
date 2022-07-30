@@ -8,7 +8,7 @@
 
 <script>
 import Category from '@/components/Category.vue'
-import NewList from '@/components/NweList.vue'
+import NewList from '@/components/NewList.vue'
 export default {
   // 选项： options API vue2.0的选项式api
   data () {
