@@ -21,16 +21,16 @@ export default {
   },
   mutations: {
     addToDoList (state, payload) {
-      console.log(state.todoList.length);
+      // console.log(state.todoList.length);
       state.todoList.unshift({
         name: payload,
         done: false,
-        id: state.todoList.length+1
+        id: state.todoList[0] ? state.todoList[0].id+1 : 1
       })
     },
     delToDoList (state, payload) {
       state.todoList = state.todoList.filter((item) => {
-        return item !== payload
+        return item.id !== payload
       })
     }
   },

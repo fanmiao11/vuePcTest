@@ -9,7 +9,7 @@
       <div class="view">
         <input class="toggle" type="checkbox" v-model="item.done" />
         <label>{{item.name}}</label>
-        <button class="destroy" @click="delToDoListAction(item)"></button>
+        <button class="destroy" @click="delToDoListAction(item.id)"></button>
       </div>
     </li>
   </ul>
